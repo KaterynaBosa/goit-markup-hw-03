@@ -11,6 +11,9 @@
   --color-grey: rgba(46, 47, 66);
   --color-white: rgba(255, 255, 255);
   --color-dairy: rgba(252, 252, 252);
+  --btn-bord: rgba(0, 0, 0, 0.15);
+  --team-shadow: rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -45,6 +48,10 @@ img {
   padding: 0;
   margin: 0;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /* reset end */
 .container {
   width: 1158px;
@@ -72,6 +79,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  margin-bottom: 16px;
 }
 .dark-logo {
   font-weight: 800;
@@ -154,18 +162,29 @@ img {
 
 /* main */
 
-.main-section {
+.hero-section {
   background: #2e2f42;
+  padding: 188px 0px 188px 0px;
 }
-.main-section-title {
+.hero-section-title {
+  display: block;
+  max-width: 496px;
+  margin: auto;
+
+  font-style: normal;
   font-weight: 700;
-  text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  margin-bottom: 48px;
+  text-align: center;
 }
-.main-section-button {
+.hero-section-button {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 16px 32px;
   gap: 10px;
   font-weight: 500;
@@ -175,16 +194,23 @@ img {
   background: var(--color-iris);
   color: var(--color-white);
   font-family: inherit;
+  border: none;
+  box-shadow: 0px 4px 4px var(--btn-bord);
+  border-radius: 4px;
 }
 
-.main-section-button:hover,
-.main-section-button:focus {
+.hero-section-button:hover,
+.hero-section-button:focus {
   background: var(--color-ocean);
   color: var(--color-white);
   cursor: pointer;
 }
 
 /*  features  */
+.features-list {
+  display: flex;
+  gap: 24px;
+}
 .feature-title {
   line-height: 1.2;
 }
@@ -193,6 +219,7 @@ img {
 .features-item {
   align-items: flex-start;
   padding: 0px;
+  width: 264px;
 }
 .features-subtitle {
   font-weight: 500;
@@ -200,6 +227,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  padding-bottom: 8px;
 }
 .features-description {
   line-height: 1.5;
@@ -215,8 +243,11 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-navy-blue);
+  padding-bottom: 72px;
 }
-.whatwedo {
+.whatwedo-list {
+  display: flex;
+  gap: 24px;
 }
 .whatwedo-item {
   padding: 0px;
@@ -226,7 +257,9 @@ img {
 .team-section {
   background-color: var(--color-cloud);
 }
-.team {
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-title {
   font-size: 36px;
@@ -235,10 +268,29 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-navy-blue);
+  padding-bottom: 72px;
 }
 .team-item {
+  width: calc((100%- (32 * 2) / 4));
   background-color: var(--color-white);
   padding: 0px 0px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 32px;
+  gap: 32px;
+  box-shadow: 0px 1px 6px var(--team-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-name-container {
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  gap: 8px;
 }
 .team-name {
   font-weight: 500;
@@ -253,6 +305,12 @@ img {
 }
 
 /* Footer */
+.footer-container {
+  width: 264px;
+  display: inline-block;
+  padding: 100px 1020px 100px 156px;
+  box-sizing: content-box;
+}
 .page-footer {
   background-color: var(--color-navy-blue);
 }
@@ -266,18 +324,37 @@ img {
 }
 
 .card {
+  width: calc((100% - 48px) / 3);
   background: var(--color-white);
 }
+.btn-list {
+  display: flex;
+  flex-direction: row;
+  align-items: ;
+  padding: 0px;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
 .portfolio-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
-  text-align: center;
+
+  font-style: normal;
   letter-spacing: 0.04em;
   background: var(--color-cloud);
   color: var(--color-iris);
   font-family: inherit;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--color-cloud);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
