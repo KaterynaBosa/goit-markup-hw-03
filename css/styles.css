@@ -14,6 +14,7 @@
   --btn-bord: rgba(0, 0, 0, 0.15);
   --team-shadow: rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+  --btn-color: var(--color-cornflower);
 }
 
 body {
@@ -234,7 +235,6 @@ img {
 }
 .feature-title {
   line-height: 1.2;
-  margin-bottom: 8px;
 }
 .features-section {
 }
@@ -250,6 +250,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .features-description {
   line-height: 1.5;
@@ -334,16 +335,15 @@ img {
 
 /* Footer */
 .footer-container {
-  width: 264px;
+  max-width: 264px;
   display: inline-block;
-  padding: 0px 1020px 0px 156px;
-  box-sizing: content-box;
 }
 .page-footer {
   padding: 100px 0;
   background: var(--color-navy-blue);
 }
 .footer-description {
+  max-width: 264px;
   color: var(--color-cloud);
 }
 .link-footer {
@@ -369,11 +369,12 @@ img {
   justify-content: center;
   padding: 0px;
   gap: 24px;
-
+  margin-bottom: 72px;
   padding-bottom: 72px;
 }
 .portfolio-btn {
   display: flex;
+
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
@@ -382,7 +383,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--btn-color);
   font-style: normal;
   letter-spacing: 0.04em;
   background: var(--color-cloud);
