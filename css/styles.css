@@ -23,24 +23,43 @@ body {
   background-color: var(--color-white);
 }
 
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
-
+img {
+  display: block;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+/* reset end */
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 /* Heder */
 .logo {
+  margin-right: 76px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,9 +94,11 @@ body {
 .container-header {
   display: flex;
   padding: 24 0 24 0;
+  align-items: center;
 }
 .heder-menu {
   display: flex;
+  margin-right: auto;
 }
 .menu {
   display: flex;
@@ -91,7 +112,8 @@ body {
 }
 .menu .link {
   display: block;
-  padding: 24 0 24 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-item {
@@ -120,6 +142,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-item:hover,
