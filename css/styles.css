@@ -95,7 +95,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-  margin-bottom: 16px;
 }
 .dark-logo {
   font-weight: 800;
@@ -334,15 +333,28 @@ img {
 }
 
 /* Footer */
-.footer-container {
-  max-width: 264px;
-  display: inline-block;
+.logo-footer {
+  margin-right: 76px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-iris);
+  margin-bottom: 16px;
 }
 .page-footer {
   padding: 100px 0;
   background: var(--color-navy-blue);
 }
 .footer-description {
+  width: 264px;
   color: var(--color-cloud);
 }
 .link-footer {
