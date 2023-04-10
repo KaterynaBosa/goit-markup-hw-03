@@ -343,7 +343,6 @@ img {
   background: var(--color-navy-blue);
 }
 .footer-description {
-  max-width: 264px;
   color: var(--color-cloud);
 }
 .link-footer {
@@ -374,7 +373,6 @@ img {
 }
 .portfolio-btn {
   display: flex;
-
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
@@ -391,7 +389,6 @@ img {
   font-family: inherit;
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid var(--color-cloud);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
