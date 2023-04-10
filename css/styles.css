@@ -383,7 +383,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  border: 1px solid var(--btn-color);
+  border: 1px solid var(--color-cornflower);
   font-style: normal;
   letter-spacing: 0.04em;
   background: var(--color-cloud);
