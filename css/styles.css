@@ -65,7 +65,7 @@ img {
   margin: 0;
 }
 .section {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 /* reset end */
 .container {
@@ -255,7 +255,9 @@ img {
   color: var(--color-slate);
 }
 /* What are we going */
-
+.whatwedo-section {
+  padding-top: 0;
+}
 .whatwedo-title {
   font-weight: 700;
   text-align: center;
@@ -353,7 +355,7 @@ img {
 
 /* portfolio */
 .row-section {
-  padding: 96px;
+  padding: 96px 0 120px;
 }
 
 .row-title {
